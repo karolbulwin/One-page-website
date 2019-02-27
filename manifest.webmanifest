@@ -28,6 +28,6 @@
   "start_url": "/One-page-website/index.html",
   "scope": "/One-page-website/",
   "display": "fullscreen",
-  "background_color": "#000000",
-  "theme_color": "#000000"
+  "background_color": "#333",
+  "theme_color": "#333"
 }
