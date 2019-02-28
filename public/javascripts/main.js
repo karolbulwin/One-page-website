@@ -14,8 +14,10 @@
     anchor.addEventListener('click', smoothScrolling);
   });
 
-  document.querySelector('nav').addEventListener('click', (e) => {
-    e.preventDefault();
+  anchors.forEach((anchor) => {
+    anchor.addEventListener('click', (e) => {
+      e.preventDefault();
+    });
   });
 
   function addOpacityAfterScroll() {
