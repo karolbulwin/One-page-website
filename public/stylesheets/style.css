@@ -1,0 +1,122 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  position: relative; }
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+html {
+  scroll-behavior: smooth; }
+
+.bg-darker {
+  background-color: #333; }
+
+nav {
+  opacity: 1;
+  -webkit-transition-timing-function: ease-in;
+  transition-timing-function: ease-in;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -webkit-transition-delay: 50ms;
+  transition-delay: 50ms;
+  -webkit-transform-origin: top;
+  transform-origin: top; }
+  nav .navbar-brands img {
+    max-width: 15em;
+    width: 100%; }
+
+.nav-opacity {
+  opacity: 0.9; }
+
+.fill-screen {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-width: 100%;
+  height: 100vh;
+  width: 100vw; }
+
+div[class*=img-darkforest] {
+  position: relative;
+  background-image: url("../images/darkforest.jpg"); }
+  div[class*=img-darkforest] .title-image {
+    position: absolute;
+    padding: 1.25em;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%); }
+  div[class*=img-darkforest] .down-button {
+    position: absolute;
+    bottom: 2.5em;
+    width: 100%;
+    text-align: center; }
+    div[class*=img-darkforest] .down-button i {
+      color: white; }
+
+@media screen and (max-width: 25em) {
+  .navbar > a {
+    width: 70%; } }
+
+.parallax {
+  background-attachment: fixed; }
+
+.text-banner {
+  display: block;
+  text-align: center;
+  margin: 2.5em 1.25em; }
+  .text-banner h1 {
+    font-size: 2.75em;
+    padding-bottom: 0.2em; }
+  .text-banner p {
+    font-size: 1.125em; }
+
+.fixed-attachment {
+  background-attachment: fixed; }
+
+.multiple-columns p {
+  column-count: 3;
+  column-width: 12em;
+  column-gap: 2em; }
+
+.carousel {
+  margin: 2em -.9375em; }
+  .carousel .carousel-item {
+    text-align: center; }
+    .carousel .carousel-item img {
+      max-width: 100%;
+      max-height: 100%; }
+
+.activity-section {
+  margin: 3.125em; }
+  .activity-section .activity-element {
+    text-align: center; }
+    .activity-section .activity-element img {
+      width: 9.375em;
+      height: 9.375em; }
+
+.contact-us {
+  display: block;
+  margin: 3.125em;
+  text-align: center; }
+
+footer {
+  background-color: #333;
+  color: #e6e6e6;
+  padding: 1.25em;
+  text-align: center; }
+  footer p {
+    margin: 1em 0;
+    font-size: 0.9em; }
+
+div[class*=img] {
+  background-color: darkgreen; }
+
+.img-trees {
+  background-image: url("../images/trees.jpg"); }
+
+.img-trees2 {
+  background-image: url("../images/trees2.jpg"); }
+
+/*# sourceMappingURL=style.css.map */
