@@ -47,16 +47,28 @@ nav {
     width: 100vw;
 }
 
-div[class*=img-darkforest] {
+div[class*=img-waterandhill] {
     position: relative;
-    background-image: url('../images/darkforest.jpg');
+    background-image: url('../images/waterandhills_small.jpg');
+    background-image: -webkit-image-set(
+        url('../images/waterandhills_small.jpg') 1x,
+        url('../images/waterandhills_1920.jpg') 2x
+    );
+    background-image: image-set(
+        url('../images/waterandhills_small.jpg') 1x,
+        url('../images/waterandhills_1920.jpg') 2x
+    );
+    @media screen and (min-height: 640px) {
+        background-image: url('../images/waterandhills_1920.jpg');
+    }
     .title-image {
         position: absolute;
         padding: 1.25em;
         top: 50%;
         left: 50%;
         margin-right: -50%;
-        transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
     }
     .down-button {
         position: absolute;
@@ -99,9 +111,12 @@ div[class*=img-darkforest] {
 
 .multiple-columns {
     p {
-        column-count: 3;
-        column-width: 12em;
-        column-gap: 2em;
+        -webkit-column-count: 3;
+                column-count: 3;
+        -webkit-column-width: 12em;
+                column-width: 12em;
+        -webkit-column-gap: 2em;
+                column-gap: 2em;
     }
 }
 
@@ -112,6 +127,9 @@ div[class*=img-darkforest] {
         img {
             max-width: 100%;
             max-height: 100%;
+        }
+        div {
+            background-color: transparentize($color: $main, $amount: 0.3);
         }
     }
 }
@@ -148,9 +166,33 @@ div[class*=img] {
     background-color: darkgreen;
 }
 
-.img-trees{
-    background-image: url('../images/trees.jpg');
+.img-sun {
+    background-image: url('../images/suntrees_small.jpg');
+    background-image: -webkit-image-set(
+        url('../images/suntrees_small.jpg') 1x,
+        url('../images/suntrees_1920.jpg') 2x,
+    );
+    background-image: image-set(
+        url('../images/suntrees_small.jpg') 1x,
+        url('../images/suntrees_1920.jpg') 2x,
+    );
+    @media screen and (min-height: 640px) {
+       background-image: url('../images/suntrees_1920.jpg');
+    }
 }
-.img-trees2 {
-    background-image: url('../images/trees2.jpg');
+
+
+.img-trunksoftrees {
+    background-image: url('../images/trunksoftrees_small.jpg');
+    background-image: -webkit-image-set(
+        url('../images/trunksoftrees_small.jpg') 1x,
+        url('../images/trunksoftrees_1920.jpg') 2x
+    );
+    background-image: image-set(
+        url('../images/trunksoftrees_small.jpg') 1x,
+        url('../images/trunksoftrees_1920.jpg') 2x
+    );
+    @media screen and (min-height: 640px) {
+        background-image: url('../images/trunksoftrees_1920.jpg');
+    }
 }

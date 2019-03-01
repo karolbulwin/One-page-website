@@ -37,22 +37,28 @@ nav {
   height: 100vh;
   width: 100vw; }
 
-div[class*=img-darkforest] {
+div[class*=img-waterandhill] {
   position: relative;
-  background-image: url("../images/darkforest.jpg"); }
-  div[class*=img-darkforest] .title-image {
+  background-image: url("../images/waterandhills_small.jpg");
+  background-image: -webkit-image-set(url("../images/waterandhills_small.jpg") 1x, url("../images/waterandhills_1920.jpg") 2x);
+  background-image: image-set(url("../images/waterandhills_small.jpg") 1x, url("../images/waterandhills_1920.jpg") 2x); }
+  @media screen and (min-height: 640px) {
+    div[class*=img-waterandhill] {
+      background-image: url("../images/waterandhills_1920.jpg"); } }
+  div[class*=img-waterandhill] .title-image {
     position: absolute;
     padding: 1.25em;
     top: 50%;
     left: 50%;
     margin-right: -50%;
+    -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%); }
-  div[class*=img-darkforest] .down-button {
+  div[class*=img-waterandhill] .down-button {
     position: absolute;
     bottom: 2.5em;
     width: 100%;
     text-align: center; }
-    div[class*=img-darkforest] .down-button i {
+    div[class*=img-waterandhill] .down-button i {
       color: white; }
 
 @media screen and (max-width: 25em) {
@@ -76,8 +82,11 @@ div[class*=img-darkforest] {
   background-attachment: fixed; }
 
 .multiple-columns p {
+  -webkit-column-count: 3;
   column-count: 3;
+  -webkit-column-width: 12em;
   column-width: 12em;
+  -webkit-column-gap: 2em;
   column-gap: 2em; }
 
 .carousel {
@@ -87,6 +96,8 @@ div[class*=img-darkforest] {
     .carousel .carousel-item img {
       max-width: 100%;
       max-height: 100%; }
+    .carousel .carousel-item div {
+      background-color: rgba(51, 51, 51, 0.7); }
 
 .activity-section {
   margin: 3.125em; }
@@ -113,10 +124,20 @@ footer {
 div[class*=img] {
   background-color: darkgreen; }
 
-.img-trees {
-  background-image: url("../images/trees.jpg"); }
+.img-sun {
+  background-image: url("../images/suntrees_small.jpg");
+  background-image: -webkit-image-set(url("../images/suntrees_small.jpg") 1x, url("../images/suntrees_1920.jpg") 2x);
+  background-image: image-set(url("../images/suntrees_small.jpg") 1x, url("../images/suntrees_1920.jpg") 2x); }
+  @media screen and (min-height: 640px) {
+    .img-sun {
+      background-image: url("../images/suntrees_1920.jpg"); } }
 
-.img-trees2 {
-  background-image: url("../images/trees2.jpg"); }
+.img-trunksoftrees {
+  background-image: url("../images/trunksoftrees_small.jpg");
+  background-image: -webkit-image-set(url("../images/trunksoftrees_small.jpg") 1x, url("../images/trunksoftrees_1920.jpg") 2x);
+  background-image: image-set(url("../images/trunksoftrees_small.jpg") 1x, url("../images/trunksoftrees_1920.jpg") 2x); }
+  @media screen and (min-height: 640px) {
+    .img-trunksoftrees {
+      background-image: url("../images/trunksoftrees_1920.jpg"); } }
 
 /*# sourceMappingURL=style.css.map */
