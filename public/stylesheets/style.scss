@@ -49,8 +49,8 @@ nav {
 
 div[class*=img-waterandhill] {
     position: relative;
-    background-image: url('../images/waterandhills_480h.jpg');
-    background-image: -webkit-image-set(
+    background-image: url('../images/waterandhills_960h.jpg');
+  /*  background-image: -webkit-image-set(
         url('../images/waterandhills_480h.jpg') 1x,
         url('../images/waterandhills_960h.jpg') 2x
     );
@@ -88,7 +88,7 @@ div[class*=img-waterandhill] {
     }
     @media screen and (min-height: 1081px) {
         background-image: url('../images/waterandhills_1920.jpg');
-    }
+    } */
     .title-image {
         position: absolute;
         padding: 1.25em;
@@ -195,8 +195,8 @@ div[class*=img] {
 }
 
 .img-sun {
-    background-image: url('../images/suntrees_480h.jpg');
-    background-image: -webkit-image-set(
+    background-image: url('../images/suntrees_960h.jpg');
+    /*   background-image: -webkit-image-set(
         url('../images/suntrees_480h.jpg') 1x,
         url('../images/suntrees_960h.jpg') 2x
     );
@@ -235,12 +235,12 @@ div[class*=img] {
     }
     @media screen and (min-height: 1080px) {
         background-image: url('../images/suntrees_1080h.jpg');
-    }
+    }*/
 }
 
 .img-trunksoftrees {
-    background-image: url('../images/trunksoftrees_480h.jpg');
-    background-image: -webkit-image-set(
+    background-image: url('../images/trunksoftrees_960h.jpg');
+   /*  background-image: -webkit-image-set(
         url('../images/trunksoftrees_480h.jpg') 1x,
         url('../images/trunksoftrees_960h.jpg') 2x
     );
@@ -279,5 +279,5 @@ div[class*=img] {
     }
     @media screen and (min-height: 1080px) {
         background-image: url('../images/trunksoftrees_1080h.jpg');
-    }
+    } */
 }
