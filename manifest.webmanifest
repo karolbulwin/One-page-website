@@ -1,6 +1,8 @@
 {
   "lang": "en",
   "dir": "ltr",
+  "name": "Somewhere in the woods",
+  "description": "One page website example",
   "icons": [
     {
     "src": "public/images/icons/favicon-16.png",
