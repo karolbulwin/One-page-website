@@ -1,11 +1,13 @@
-const CACHE_NAME = 'woods-cache-v1.3';
+const CACHE_NAME = 'woods-cache-v1.4';
 const urlsToCache = [
   '/',
   'index.html',
   'favicon.ico',
+  'public/images/site-logo.svg',
   'public/stylesheets/style.css',
   'public/stylesheets/animate.css',
   'public/javascripts/main.js',
+  'public/javascripts/vh-fix.js',
   'public/javascripts/service-worker.js',
   'https://fonts.googleapis.com/css?family=Open+Sans',
   'https://use.fontawesome.com/releases/v5.7.2/css/all.css',
@@ -29,7 +31,7 @@ self.addEventListener('install', (event) => {
 });
 
 self.addEventListener('activate', (event) => {
-  const cacheWhitelist = ['woods-cache-v1.3'];
+  const cacheWhitelist = ['woods-cache-v1.4'];
 
   event.waitUntil(
     caches.keys().then(cacheNames => Promise.all(
