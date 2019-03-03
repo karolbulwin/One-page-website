@@ -8,8 +8,8 @@
     }
   };
 */
-  const windowHeight = window.innerHeight;
   window.onresize = () => {
+    const windowHeight = window.innerHeight;
     const fullScreenBg = document.querySelectorAll('.fill-screen');
     if (fullScreenBg[0].clientHeight !== windowHeight) {
       for (let i = 0; i < fullScreenBg.length; i += 1) {
