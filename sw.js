@@ -1,4 +1,4 @@
-const CACHE_NAME = 'woods-cache-v1.8';
+const CACHE_NAME = 'woods-cache-v1.8.1';
 const urlsToCache = [
   '/',
   'index.html',
@@ -31,7 +31,7 @@ self.addEventListener('install', (event) => {
 });
 
 self.addEventListener('activate', (event) => {
-  const cacheWhitelist = ['woods-cache-v1.8'];
+  const cacheWhitelist = ['woods-cache-v1.8.1'];
 
   event.waitUntil(
     caches.keys().then(cacheNames => Promise.all(
