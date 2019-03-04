@@ -1,8 +1,10 @@
 @import 'colors.scss';
+@import 'mixins.scss';
 
 body {
     font-family: 'Open Sans', sans-serif;
     position: relative;
+    @include user-select;
     &.using-mouse :focus:not(:disabled) { 
         outline: none;
     }
@@ -11,6 +13,10 @@ body {
         outline-style: solid;
         outline-width: 2px;
     }
+}
+
+h1, h2, h3, p {
+    @include user-select(text);
 }
 
 * {

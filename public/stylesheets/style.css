@@ -1,12 +1,22 @@
 body {
   font-family: 'Open Sans', sans-serif;
-  position: relative; }
+  position: relative;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
   body.using-mouse :focus:not(:disabled) {
     outline: none; }
   body :focus:not(:disabled) {
     outline-color: rgba(255, 145, 0, 0.5);
     outline-style: solid;
     outline-width: 2px; }
+
+h1, h2, h3, p {
+  -webkit-user-select: text;
+  -moz-user-select: text;
+  -ms-user-select: text;
+  user-select: text; }
 
 * {
   -webkit-box-sizing: border-box;

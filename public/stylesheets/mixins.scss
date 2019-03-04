@@ -1,0 +1,6 @@
+@mixin user-select ($option: none) {
+    -webkit-user-select: $option;
+    -moz-user-select: $option;
+     -ms-user-select: $option;
+         user-select: $option;
+}
