@@ -1,4 +1,4 @@
-const CACHE_NAME = 'woods-cache-v1.8.3';
+const CACHE_NAME = 'woods-cache-v1.8.4';
 const urlsToCache = [
   '/',
   'index.html',
@@ -10,10 +10,10 @@ const urlsToCache = [
   'public/javascripts/service-worker.js',
   'https://fonts.googleapis.com/css?family=Open+Sans',
   'https://use.fontawesome.com/releases/v5.7.2/css/all.css',
-  'https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css',
+  'https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css',
   'https://code.jquery.com/jquery-3.3.1.slim.min.js',
-  'https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js',
-  'https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js'
+  'https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js',
+  'https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js'
 ];
 
 self.addEventListener('install', (event) => {
@@ -30,7 +30,7 @@ self.addEventListener('install', (event) => {
 });
 
 self.addEventListener('activate', (event) => {
-  const cacheWhitelist = ['woods-cache-v1.8.3'];
+  const cacheWhitelist = ['woods-cache-v1.8.4'];
 
   event.waitUntil(
     caches.keys().then(cacheNames => Promise.all(
