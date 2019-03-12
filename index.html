@@ -11,6 +11,18 @@
     <meta name="keywords" content="Website, one page, example">
     <meta name="author" content="Karol Bulwin">
     <link rel="manifest" href="manifest.webmanifest">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="Woods">
+    <meta property=og:title content="Woods">
+    <meta property=og:type content="website">
+    <meta property=og:image content="https://karolbulwin.github.io/One-page-website/public/images/icons/favicon-192.png">
+    <meta property=og:url content="https://karolbulwin.github.io/One-page-website/index.html">
+    <meta property=og:description content="One page website example">
+    <meta name=twitter:card content="summary">
+    <meta name=twitter:url content="https://karolbulwin.github.io/One-page-website/index.html">
+    <meta name=twitter:title content="Woods">
+    <meta name=twitter:description content="One page website example">
+    <meta name=twitter:image content="https://karolbulwin.github.io/One-page-website/public/images/icons/favicon-192.png">  
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
@@ -22,10 +34,13 @@
     <link rel="stylesheet" href="public/stylesheets/style.css">
     <!-- Animate CSS-->
     <link rel="stylesheet" href="public/stylesheets/animate.css">
+      <!-- Add to home screen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#333">
+    <meta name="apple-mobile-web-app-title" content="Woods">
     <!-- ****** faviconit.com favicons ****** -->
     <link rel="shortcut icon" href="favicon.ico">
     <link rel="icon" sizes="16x16 32x32 64x64" href="favicon.ico">
-    <!-- remove? -->
     <link rel="icon" type="image/png" sizes="196x196" href="public/images/icons/favicon-192.png">
     <link rel="icon" type="image/png" sizes="160x160" href="public/images/icons/favicon-160.png">
     <link rel="icon" type="image/png" sizes="96x96" href="public/images/icons/favicon-96.png">
@@ -41,6 +56,9 @@
     <link rel="apple-touch-icon" sizes="76x76" href="public/images/icons/favicon-76.png">
     <link rel="apple-touch-icon" sizes="152x152" href="public/images/icons/favicon-152.png">
     <link rel="apple-touch-icon" sizes="180x180" href="public/images/icons/favicon-180.png">
+    <meta name="msapplication-TileColor" content="#333">
+    <meta name="msapplication-TileImage" content="public/images/icons/favicon-144.png">
+    <meta name="msapplication-config" content="public/images/icons/browserconfig.xml">
     <!-- ****** faviconit.com favicons ****** -->
 </head>
 
@@ -234,7 +252,6 @@
         integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
         crossorigin="anonymous"></script>
     <script src="public/javascripts/main.js"></script>
-    <!--<script src="public/javascripts/vh-fix.js"></script>-->
     <script src="public/javascripts/service-worker.js"></script>
 
 </body>
