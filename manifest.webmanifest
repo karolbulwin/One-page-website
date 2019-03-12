@@ -26,8 +26,8 @@
   }
 ],
   "start_url": "/One-page-website/index.html",
-  "scope": "/One-page-website/",
-  "display": "fullscreen",
   "background_color": "#333",
+  "display": "fullscreen",
+  "scope": "/One-page-website/",
   "theme_color": "#333"
 }
