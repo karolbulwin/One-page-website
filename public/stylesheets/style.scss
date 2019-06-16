@@ -33,6 +33,7 @@ html {
 }
 
 nav {
+    box-shadow: 0px 2px 4px 1px #00000075;
     opacity: 1;
     -webkit-transition-timing-function: ease-in;
             transition-timing-function: ease-in;
@@ -53,6 +54,7 @@ nav {
 }
 
 .fill-screen {
+    box-shadow: inset 0 0 15px 1px black;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -174,14 +176,17 @@ div[class*=img-waterandhill] {
 
 .carousel {
     margin: 2em -.9375em;
-    .carousel-item {
-        text-align: center;
-        img {
-            max-width: 100%;
-            max-height: 100%;
-        }
-        div {
-            background-color: transparentize($color: $main, $amount: 0.3);
+    .carousel-inner {
+        box-shadow: 0px 0px 5px 2px #00000069;
+        .carousel-item {
+            text-align: center;
+            img {
+                max-width: 100%;
+                max-height: 100%;
+            }
+            div {
+                background-color: transparentize($color: $main, $amount: 0.3);
+            }
         }
     }
 }
@@ -191,6 +196,7 @@ div[class*=img-waterandhill] {
     .activity-element {
         text-align: center;
         img {
+            box-shadow: 0px 0px 5px 2px #00000069;
             width: 9.375em;
             height: 9.375em;
         }
@@ -204,6 +210,7 @@ div[class*=img-waterandhill] {
 }
 
 footer {
+    box-shadow: 0px -1px 5px 1px #00000085;
     background-color: $main;
     color: lighten($color: $main, $amount: 70%);
     padding: 1.25em;
