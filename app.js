@@ -6,7 +6,7 @@ const sassMiddleware = require('node-sass-middleware');
 const compression = require('compression');
 
 const app = express();
-const port = process.env.PORT || 4000;
+const port = process.env.PORT || 3000;
 
 app.use(compression());
 
